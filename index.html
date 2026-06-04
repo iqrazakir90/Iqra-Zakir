@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-container {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        select, input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea, input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            width: 70%;
+            padding: 15px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(40, 101, 194);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin: 0 auto;
+        }
+        button[type="submit"]:hover {
+            background-color: rgb(30, 80, 160);
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1 style="color: rgb(40, 101, 194);">Saylani Registration Form</h1>
+    </center>
+    <div class="form-container">
+    <form>
+    
+
+    <h2 style="color: rgb(40, 101, 194);">Location & Course Details</h2>
+
+    <label>Country</label>
+    <select>
+        <Option>Pakistan</Option>
+        <option>India</option>
+        <option>Turkey</option>
+        <option>Select Country</option>
+    </select>
+    <br>
+
+    <label>Select Class Preference</label>
+    <select>
+        <option>Select Class Preference</option>
+        <option>Online</option>
+        <option>Onsite</option>
+    </select>
+    <br>
+
+    <label>Gender</label>
+    <select>
+        <option>Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+    </select>
+    <br>
+
+    <label>City</label>
+   <select name="city" id="city">
+        <option>Select City</option>
+        <option>Karachi</option>
+        <option>Lahore</option>
+        <option>Islamabad</option>
+    </select>
+    <br>
+
+    <label>Course</label>
+    <select name="Course" id="Course">
+        <option>Select Course</option>
+        <option>Web Development</option>
+        <option>Mobile Development</option>
+        <option>Data Science</option>
+    </select>
+    <br>
+
+    <h2 style="color: rgb(40, 101, 194);">Personal Information</h2>
+
+    <label>Full Name</label>
+    <input type="text">
+
+    <label>Father Name</label>
+    <input type="text">
+
+    <label>Date of Birth</label>
+    <input type="date">
+
+    <label>Email</label>
+    <input type="email">
+
+    <label>Phone</label>
+    <input type="tel">
+
+    <label>Address</label>
+    <textarea></textarea>
+
+    <h2 style="color: rgb(40, 101, 194);">Education Details</h2>
+
+    <label>Computer Proficiency</label>
+    <select>
+        <option>Select your computer proficiency</option>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+    </select>
+
+    <label>Last Qualification</label>
+    <input type="text">
+
+    <label>Do you have a Laptop?</label>
+    <input type="radio" name="laptop"> Yes
+    <input type="radio" name="laptop"> No
+
+    <h3 style="color: rgb(40, 101, 194);">Upload Picture</h3>
+    <input type="file">
+
+    <br><br>
+
+    <input type="checkbox"> I agree to the terms and conditions
+
+    <br><br>
+
+    <button type="submit">✓ Submit Registration</button>
+    </form>
+    </div>
+</center>
+</body>
+</html>
